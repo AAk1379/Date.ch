@@ -1,0 +1,14 @@
+Using TMS.Class;
+public Form1(
+
+     {
+
+     InitializeComponent();
+
+ {
+MaftooxCalendar.MaftooxPersianCalendar.TimeWork prdTime = new MaftooxCalendar.MaftooxPersianCalendar.TimeWork()
+MaftooxCalendar.MaftooxPersianCalendar.DateWork prd = new MaftooxCalendar.MaftooxPersianCalendar.DateWork();
+prdTime.Upate();
+String stry = prd.GetNameMonth() + prd.GetNameDayInMonth();
+label1.Text = prd.GetNameDayInMonth() + "   " + prd.GetNumberDayInMonth().ToString() + "   " + prd.GetNameMonth() + "  سال  " + prd.GetNumberYear().ToString();
+label2.Text = prdTime.GetNumberHour() + ":" + prdTime.GetNumberMinute() + ":" + prdTime.GetNumberSecond
